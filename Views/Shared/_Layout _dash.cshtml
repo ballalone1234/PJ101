@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .baloo_bold {
+            font-family: 'Baloo 2', cursive;
+        }
+    </style>
+</head>
+
+<div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#454545">
+    <div class="container">
+        <div class="navbar-header">
+            <img src="~/Content/images/Logo_menu.png" width="55" />
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("SUT Course Review", "Index", "Home")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            </ul>
+            @Html.Partial("_LoginPartial")
+        </div>
+    </div>
+</div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .vertical-menu {
+            width: 200px;
+        }
+
+            .vertical-menu a {
+                background-color: white;
+                color: black;
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                font-size: 12px;
+                height:37.5px;
+            }
+
+                .vertical-menu a:hover {
+                    background-color: #ccc;
+                }
+
+                .vertical-menu a.active {
+                    background-color: #EFDF8D;
+                    color: black;
+                }
+
+        .topic {
+            background-color: white;
+            color: black;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<div class="col-md-2">
+
+    <div class="vertical-menu">
+        <a href="#" class="active" style="font-size:15px; font-weight:normal; height:60px;">
+            <table class="active">
+                <tr>
+                    <td>
+                        <img src="~/Content/images/Admin.png" width="40" />
+                    </td>
+                    <td>
+                        &emsp;
+                        Welcome back
+                        <br />
+                        <span style="font-weight:bold">&emsp;Admin</span>
+
+                    </td>
+
+                </tr>
+            </table>
+        </a><div class="topic">
+            Main Menu
+        </div>
+        
+        @Html.ActionLink("TEST", "ACTIVATE", "Project")
+        <a href="ACTIVATE">&emsp;<img src="~/Content/images/Dashboard.png" width="17" />&emsp;Dashboard</a>
+        <a href="Profile">&emsp;<img src="~/Content/images/AP.png" width="17" />&emsp;Activate Personnel</a>
+        <a href="#">&emsp;<img src="~/Content/images/Dashboard.png" width="17" />&emsp;Empty</a>
+        <div class="topic">
+            User Management
+        </div>
+        <a href="#">&emsp;<img src="~/Content/images/AM.png" width="17" />&emsp;Admin</a>
+        <a href="#">&emsp;<img src="~/Content/images/Perso.png" width="15" />&emsp;Personnel</a>
+        <a href="#">&emsp;<img src="~/Content/images/Stu.png" width="15" />&emsp;Student</a>
+        <a href="#">&emsp;<img src="~/Content/images/Dashboard.png" width="17" />&emsp;Empty</a>
+        <div class="topic">
+            Data Management
+        </div>
+        <a href="#">&emsp;<img src="~/Content/images/Course.png" width="17" />&emsp;Course Code</a>
+        <a href="#">&emsp;<img src="~/Content/images/Report.png" width="17" />&emsp;Report</a>
+        <a href="#">&emsp;<img src="~/Content/images/Tag.png" width="17" />&emsp;Tag</a>
+        <a href="#">&emsp;<img src="~/Content/images/Dashboard.png" width="17" />&emsp;Empty</a>
+        <a href="#">&emsp;<img src="~/Content/images/Dashboard.png" width="17" />&emsp;Empty</a>
+    </div>
+
+</div>
+<body style="background-color:#FFF9DB;">
+    <div class="container body-content" style="width:100%">
+        @RenderBody()
+        <hr />
+      
+    </div>
+</body>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+
+
+</html>

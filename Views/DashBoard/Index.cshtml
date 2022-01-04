@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout _dash.cshtml";
+
+}
+
+<style>
+    .DashB {
+        position: absolute;
+        width: 1225px;
+        height: 640px;
+        left: 270px;
+        top: 70px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50px;
+    }
+    .graph1 {
+        margin-top:5px;
+        width: 300px;
+        height: 250px;
+        background: #FFFFFF;
+        border-radius: 25px;
+    }
+    .graph2 {
+        margin-top: 5px;
+        width: 450px;
+        height: 500px;
+        background: #FFFFFF;
+        border-radius: 25px;
+    }
+    .status-menu {
+        margin-top:20px;
+        width: 250px;
+        height: 95px;
+        background: #FFFFFF;
+        border-radius: 25px;
+    }
+</style>
+
+    <div class="DashB">
+        <center>
+            <table>
+                <tr>
+                    <td>
+                        <div class="col-md-3">
+                            <div class="status-menu"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-md-3">
+                            <div class="status-menu"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-md-3">
+                            <div class="status-menu"></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <div class="col-md-3">
+                            <div class="graph1"></div>
+                        </div>
+
+                    </td>
+                    <td rowspan="2">
+                        <div class="col-md-3">
+                            <div class="graph2"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-md-3">
+                            <div class="graph1"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="col-md-3">
+                            <div class="graph1"></div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="col-md-3">
+                            <div class="graph1"></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    
+
